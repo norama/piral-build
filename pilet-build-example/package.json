@@ -9,7 +9,6 @@
     "@types/node": "latest",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "piral-build-example": "file:../piral-build-example/dist/emulator/piral-build-example-1.0.0.tgz",
     "piral-cli": "1.6.0",
     "piral-cli-vite": "1.1.1",
     "react": "18.3.1",

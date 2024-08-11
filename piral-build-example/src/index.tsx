@@ -3,28 +3,21 @@ import { createRoot } from "react-dom/client";
 import { createInstance, Piral, createStandardApi } from "piral";
 import { layout, errors } from "./layout";
 
+const defaultFeedUrl = "http://localhost:1234/api/pilets";
+
 const instance = createInstance({
   state: {
     components: layout,
     errorComponents: errors,
   },
   plugins: [...createStandardApi()],
+  debug: {
+    defaultFeedUrl,
+  },
   requestPilets() {
-    return Promise.resolve([
-      {
-        name: "pilet-build-example",
-        version: "1.0.0",
-        description: "",
-        author: {
-          name: "",
-          email: "",
-        },
-        dependencies: {},
-        requireRef: "rolluppr_pilet-build-example",
-        spec: "v2",
-        link: "http://localhost:5001/$pilet-api/0/index.js", //'https://assets.piral.cloud/pilets/norama-tutorial-feed/pilet1/1.0.0/index.js',
-      },
-    ]);
+    return fetch(defaultFeedUrl)
+      .then((res) => res.json())
+      .then((res) => res.items);
   },
 });
 

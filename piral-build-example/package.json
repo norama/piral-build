@@ -17,6 +17,7 @@
   "scripts": {
     "start": "piral debug",
     "build": "piral build",
+    "serve": "http-server dist/emulator -p 8000 --cors",
     "postinstall": "piral declaration"
   },
   "app": "./src/index.html",
@@ -35,6 +36,7 @@
     "@types/react-dom": "^18",
     "@types/react-router": "^5",
     "@types/react-router-dom": "^5",
+    "http-server": "^14.1.1",
     "piral-cli": "1.6.0",
     "piral-cli-vite": "1.1.1",
     "typescript": "latest"

@@ -3,7 +3,8 @@
   "schemaVersion": "v2",
   "piralInstances": {
     "piral-build-example": {
-      "selected": true
+      "selected": true,
+      "url": "http://localhost:8000/"
     }
   }
 }

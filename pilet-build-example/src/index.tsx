@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import type { PiletApi } from 'piral-build-example';
+import * as React from "react";
+import { Link } from "react-router-dom";
+//import type { PiletApi } from "piral-build-example";
 
-const Page = React.lazy(() => import('./Page'));
+const Page = React.lazy(() => import("./Page"));
 
-export function setup(app: PiletApi) {
-  app.registerPage('/page', Page);
+export function setup(app) {
+  app.registerPage("/page", Page);
 
-  app.showNotification('Hello from Piral!', {
+  app.showNotification("Hello from Piral!", {
     autoClose: 2000,
   });
   app.registerMenu(() => <Link to="/page">Page</Link>);
