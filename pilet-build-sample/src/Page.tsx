@@ -3,7 +3,7 @@ import * as React from "react";
 export default () => {
   return (
     <>
-      <h1>EXAMPLE Title</h1>
+      <h1>Sample Title</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
         reiciendis illum qui nulla adipisci, laudantium vitae atque dicta

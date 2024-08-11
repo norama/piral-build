@@ -17,7 +17,20 @@ const PILETS = [
     dependencies: {},
     requireRef: "rolluppr_pilet-build-example",
     spec: "v2",
-    link: "http://localhost:5001/$pilet-api/0/index.js", //'https://assets.piral.cloud/pilets/norama-tutorial-feed/pilet1/1.0.0/index.js',
+    link: "http://localhost:5001/$pilet-api/0/index.js",
+  },
+  {
+    name: "pilet-build-sample",
+    version: "1.0.0",
+    description: "",
+    author: {
+      name: "",
+      email: "",
+    },
+    dependencies: {},
+    requireRef: "rolluppr_pilet-build-sample",
+    spec: "v2",
+    link: "http://localhost:5002/$pilet-api/0/index.js",
   },
 ];
 
