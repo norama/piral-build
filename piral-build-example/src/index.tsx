@@ -11,13 +11,8 @@ const instance = createInstance({
     errorComponents: errors,
   },
   plugins: [...createStandardApi()],
-  debug: {
-    defaultFeedUrl,
-  },
   requestPilets() {
-    return fetch(defaultFeedUrl)
-      .then((res) => res.json())
-      .then((res) => res.items);
+    return fetch(defaultFeedUrl).then((res) => res.json());
   },
 });
 

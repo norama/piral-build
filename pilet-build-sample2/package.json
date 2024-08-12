@@ -1,0 +1,42 @@
+{
+  "name": "pilet-build-sample2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@dbeining/react-atom": "latest",
+    "@libre/atom": "latest",
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "history": "latest",
+    "path-to-regexp": "latest",
+    "piral-cli": "1.6.0",
+    "piral-cli-vite": "1.1.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "tslib": "2.6.3",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "pilet debug --port 5003",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade",
+    "postinstall": "pilet declaration"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "importmap": {
+    "inherit": [
+      "piral-build-example"
+    ],
+    "imports": {}
+  },
+  "source": "src/index.tsx"
+}

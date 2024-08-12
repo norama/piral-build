@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.piral.io/schemas/pilet-v0.json",
+  "schemaVersion": "v2",
+  "piralInstances": {
+    "piral-build-example": {
+      "selected": false,
+      "url": "http://localhost:8000/emulator.json"
+    }
+  }
+}

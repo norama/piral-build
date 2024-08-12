@@ -32,6 +32,19 @@ const PILETS = [
     spec: "v2",
     link: "http://localhost:5002/$pilet-api/0/index.js",
   },
+  {
+    name: "pilet-build-sample2",
+    version: "1.0.0",
+    description: "",
+    author: {
+      name: "",
+      email: "",
+    },
+    dependencies: {},
+    requireRef: "rolluppr_pilet-build-sample2",
+    spec: "v2",
+    link: "http://localhost:5003/$pilet-api/0/index.js",
+  },
 ];
 
 module.exports = function (_, req, res) {
